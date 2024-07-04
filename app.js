@@ -8,17 +8,25 @@ var tl = gsap.timeline({
   },
 });
 
-tl.to(
-  "#circle #circle-bottom img",
-  {
-    rotate: "-180deg",
-    duration: 0.7,
-    stagger: 0.1,
-    scale: 0,
-    ease: "Power1.easeInOut",
-  },
-  "hello"
-)
+tl.to("#center-img ", {
+  right: "21%",
+  top: "45%",
+  transform: "translate(-50%, -50%)",
+  ease: "Power1.easeInOut",
+  duration: 0.7,
+  stagger: 0.1,
+})
+  .to(
+    "#circle #circle-bottom img",
+    {
+      rotate: "-180deg",
+      duration: 0.7,
+      stagger: 0.1,
+      scale: 0,
+      ease: "Power1.easeInOut",
+    },
+    "hello"
+  )
   .to(
     "#circle #circle-top img",
     {
@@ -34,7 +42,7 @@ tl.to(
     {
       scale: 0,
       ease: "Power1.easeInOut",
-      duration: 0.7,
+      duration: 1,
       stagger: 0.1,
     },
     "hello"
@@ -43,7 +51,6 @@ tl.to(
     "#center-img h5",
     {
       opacity: 0,
-      // duration: 1,
       stagger: 0.1,
       ease: "Power1.easeInOut",
     },
@@ -62,10 +69,20 @@ tl.to(
     "#gallery",
     {
       bottom: "-50%",
-      ease: Power1.easeInOut,
+      ease: "Power1.easeInOut",
       duration: 0.5,
     },
     "hello"
+  )
+  .to(
+    "#pinkflare",
+    {
+      bottom: "1%",
+      rotate: 0,
+      ease: "Power1.easeInOut",
+      // duration: 0.5,
+    },
+    "hello2"
   )
   .to(
     "#layout #pink-dot",
