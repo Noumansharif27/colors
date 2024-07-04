@@ -12,7 +12,7 @@ tl.to(
   "#circle #circle-bottom img",
   {
     rotate: "-180deg",
-    duration: 1,
+    duration: 0.7,
     stagger: 0.1,
     scale: 0,
     ease: "Power1.easeInOut",
@@ -24,7 +24,7 @@ tl.to(
     {
       scale: 0,
       ease: "Power1.easeInOut",
-      duration: 1,
+      duration: 0.7,
       stagger: 0.1,
     },
     "hello"
@@ -34,7 +34,7 @@ tl.to(
     {
       scale: 0,
       ease: "Power1.easeInOut",
-      duration: 1,
+      duration: 0.7,
       stagger: 0.1,
     },
     "hello"
@@ -59,6 +59,25 @@ tl.to(
     "hello"
   )
   .to(
+    "#gallery",
+    {
+      bottom: "-50%",
+      ease: Power1.easeInOut,
+      duration: 0.5,
+    },
+    "hello"
+  )
+  .to(
+    "#layout #pink-dot",
+    {
+      top: "50%",
+      scale: 2,
+      transform: "translate(-50%, -50%)",
+      ease: "Power.easeInOut",
+    },
+    "hello"
+  )
+  .to(
     "#semi-circle",
     {
       scale: 0,
@@ -72,6 +91,15 @@ tl.to(
       scale: 0,
       // duration: 1,
       ease: "Power1.easeInOut",
+    },
+    "hello2"
+  )
+  .to(
+    "#layout #pink-dot",
+    {
+      opacity: 0,
+      scale: 1,
+      ease: "Power.easeInOut",
     },
     "hello2"
   );
