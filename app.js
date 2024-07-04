@@ -13,17 +13,19 @@ tl.to("#center-img ", {
   top: "45%",
   transform: "translate(-50%, -50%)",
   ease: "Power1.easeInOut",
-  duration: 0.7,
+  duration: 2,
   stagger: 0.1,
+  end: "-150%",
 })
   .to(
     "#circle #circle-bottom img",
     {
       rotate: "-180deg",
-      duration: 0.7,
+      duration: 3,
       stagger: 0.1,
       scale: 0,
       ease: "Power1.easeInOut",
+      end: "-150%",
     },
     "hello"
   )
@@ -32,7 +34,7 @@ tl.to("#center-img ", {
     {
       scale: 0,
       ease: "Power1.easeInOut",
-      duration: 0.7,
+      duration: 3,
       stagger: 0.1,
     },
     "hello"
@@ -42,7 +44,7 @@ tl.to("#center-img ", {
     {
       scale: 0,
       ease: "Power1.easeInOut",
-      duration: 1,
+      duration: 3.5,
       stagger: 0.1,
     },
     "hello"
@@ -60,7 +62,7 @@ tl.to("#center-img ", {
     "#circle",
     {
       scale: 0.6,
-      // duration: 1,
+      duration: 3,
       ease: "Power1.easeInOut",
     },
     "hello"
@@ -70,7 +72,7 @@ tl.to("#center-img ", {
     {
       bottom: "-50%",
       ease: "Power1.easeInOut",
-      duration: 0.5,
+      duration: 2,
     },
     "hello"
   )
@@ -80,7 +82,7 @@ tl.to("#center-img ", {
       bottom: "1%",
       rotate: 0,
       ease: "Power1.easeInOut",
-      // duration: 0.5,
+      duration: 1.5,
     },
     "hello2"
   )
@@ -89,6 +91,7 @@ tl.to("#center-img ", {
     {
       top: "50%",
       scale: 2,
+      duration: 2,
       transform: "translate(-50%, -50%)",
       ease: "Power.easeInOut",
     },
@@ -98,6 +101,7 @@ tl.to("#center-img ", {
     "#semi-circle",
     {
       scale: 0,
+      duration: 2,
       ease: "Power1.easeInOut",
     },
     "hello2"
@@ -106,7 +110,7 @@ tl.to("#center-img ", {
     "#circle",
     {
       scale: 0,
-      // duration: 1,
+      duration: 2,
       ease: "Power1.easeInOut",
     },
     "hello2"
@@ -116,9 +120,29 @@ tl.to("#center-img ", {
     {
       opacity: 0,
       scale: 1,
+      duration: 2,
       ease: "Power.easeInOut",
     },
     "hello2"
+  )
+  .to(
+    "#slider-div",
+    {
+      bottom: "100%",
+      ease: "Power1.easeInOut",
+      duration: 10,
+    },
+    "hello2"
+  )
+  .to(
+    "#slider-div",
+    {
+      bottom: "150%",
+      ease: "Power1.easeInOut",
+      duration: 5,
+      delay: 1,
+    },
+    "hello3"
   );
 
 // let img = document.querySelector("#semi-circle");
