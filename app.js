@@ -6,6 +6,7 @@ function timeLineOne() {
       // markers: true,
       scrub: 1,
       pin: true,
+      end: "bottom -150%",
     },
   });
 
@@ -99,6 +100,84 @@ function timeLineOne() {
       "hello"
     )
     .to(
+      "#nav-bar #brand-name",
+      {
+        color: "#fff",
+        fontWeight: 600,
+        // duration: 2,
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-6",
+      {
+        /* Object 6: Most Visible (100% opacity) */
+
+        backgroundColor: "#fff",
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-5",
+      {
+        /* Object 5: Very Visible (75% opacity) */
+
+        backgroundColor: "#ffffffef",
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-4",
+      {
+        /* Object 4: Somewhat Visible (50% opacity) */
+
+        backgroundColor: "#ffffffdd",
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-3",
+      {
+        /* Object 3: Somewhat Transparent (30% opacity) */
+
+        backgroundColor: "rbg(225, 225, 225)",
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-2",
+      {
+        /* Object 2: Quite Transparent (15% opacity) */
+        backgroundColor: "#ffffffb9",
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#colors #color-1",
+      {
+        /* Object 1: Very Transparent (5% opacity) */
+        backgroundColor: "#ffffff9a",
+        // fontWeight: 600,
+        duration: 1,
+        ease: "Power.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#text h4",
+      {
+        color: "#fff",
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
       "#semi-circle",
       {
         scale: 0,
@@ -157,11 +236,13 @@ function timeLineTwo() {
       markers: true,
       scrub: 1,
       pin: true,
+      end: "bottom -150%",
     },
   });
 
-  tl.to(".top-circles", {
+  tl.to(".circle-1", {
     top: "50%",
+    duration: 1,
     ease: "Power1",
   });
 }
