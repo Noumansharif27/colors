@@ -142,9 +142,8 @@ function timeLineOne() {
     .to(
       "#colors #color-3",
       {
-        /* Object 3: Somewhat Transparent (30% opacity) */
-
-        backgroundColor: "rbg(225, 225, 225)",
+        /* Object 3: Quite Transparent (15% opacity) */
+        backgroundColor: "#ffffffcb",
         ease: "Power.easeInOut",
       },
       "hello"
@@ -180,6 +179,15 @@ function timeLineOne() {
     .to(
       "#semi-circle",
       {
+        scale: 0.4,
+        duration: 4,
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#semi-circle",
+      {
         scale: 0,
         duration: 2,
         ease: "Power1.easeInOut",
@@ -195,12 +203,21 @@ function timeLineOne() {
       },
       "hello2"
     )
+    // .to(
+    //   "#layout #pink-dot",
+    //   {
+    //     scale: 0.4,
+    //     duration: 0.5,
+    //     ease: "Power.easeInOut",
+    //   },
+    //   "hello2"
+    // )
     .to(
       "#layout #pink-dot",
       {
         opacity: 0,
-        scale: 1,
-        duration: 2,
+        scale: 0,
+        duration: 2.5,
         ease: "Power.easeInOut",
       },
       "hello2"
