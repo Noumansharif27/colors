@@ -57,8 +57,8 @@ body {
 }
 
 #circle {
-  height: 55vw;
-  width: 55vw;
+  height: 65vw;
+  width: 65vw;
   border-radius: 50%;
   /* background-color: orange; */
   position: absolute;
@@ -248,16 +248,54 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  padding: 0.5rem 1.4rem;
+  padding: 2.35rem 2.75rem;
 }
 
-#bottom-nav-bar img {
-  height: 3.5rem;
-  /* width: 2rem; */
-  object-fit: contain;
-  /* border-radius: 50%; */
-  opacity: 0.85;
-  mix-blend-mode: color-burn;
+#left-bottom-nav {
+  position: relative;
+  height: 2.5rem;
+  width: 3rem;
+}
+
+#left-bottom-nav #iso {
+  height: 1rem;
+  width: 1.5rem;
+  background-color: #000000cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+#left-bottom-nav #iso h4 {
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+#left-bottom-nav h5 {
+  font-weight: 100;
+  font-family: "DS.Digital";
+  position: absolute;
+  bottom: 40%;
+  right: 3%;
+}
+
+#icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  width: 4rem;
+}
+
+#icon i {
+  font-family: "DS.Digital";
+}
+
+#icon h4 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  font-family: "DS.Digital";
 }
 
 #bottom-nav-bar #battery {

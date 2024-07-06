@@ -177,6 +177,15 @@ function timeLineOne() {
       "hello"
     )
     .to(
+      "#left-bottom-nav #iso",
+      {
+        backgrounfColor: "#fff",
+        color: "transparent",
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
       "#semi-circle",
       {
         scale: 0.4,
@@ -203,15 +212,6 @@ function timeLineOne() {
       },
       "hello2"
     )
-    // .to(
-    //   "#layout #pink-dot",
-    //   {
-    //     scale: 0.4,
-    //     duration: 0.5,
-    //     ease: "Power.easeInOut",
-    //   },
-    //   "hello2"
-    // )
     .to(
       "#layout #pink-dot",
       {
