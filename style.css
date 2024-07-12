@@ -123,8 +123,8 @@ body {
 }
 
 #semi-circle {
-  height: 40vw;
-  width: 40vw;
+  height: 41vw;
+  width: 41vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -248,7 +248,7 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  padding: 2.35rem 2.75rem;
+  padding: 2rem 2.75rem;
 }
 
 #left-bottom-nav {

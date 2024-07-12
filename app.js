@@ -104,7 +104,7 @@ function timeLineOne() {
       {
         color: "#fff",
         fontWeight: 600,
-        // duration: 2,
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -115,6 +115,7 @@ function timeLineOne() {
         /* Object 6: Most Visible (100% opacity) */
 
         backgroundColor: "#fff",
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -125,6 +126,7 @@ function timeLineOne() {
         /* Object 5: Very Visible (75% opacity) */
 
         backgroundColor: "#ffffffef",
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -135,6 +137,7 @@ function timeLineOne() {
         /* Object 4: Somewhat Visible (50% opacity) */
 
         backgroundColor: "#ffffffdd",
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -144,6 +147,7 @@ function timeLineOne() {
       {
         /* Object 3: Quite Transparent (15% opacity) */
         backgroundColor: "#ffffffcb",
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -153,6 +157,7 @@ function timeLineOne() {
       {
         /* Object 2: Quite Transparent (15% opacity) */
         backgroundColor: "#ffffffb9",
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -163,7 +168,7 @@ function timeLineOne() {
         /* Object 1: Very Transparent (5% opacity) */
         backgroundColor: "#ffffff9a",
         // fontWeight: 600,
-        duration: 1,
+        duration: 1.5,
         ease: "Power.easeInOut",
       },
       "hello"
@@ -172,15 +177,7 @@ function timeLineOne() {
       "#text h4",
       {
         color: "#fff",
-        ease: "Power1.easeInOut",
-      },
-      "hello"
-    )
-    .to(
-      "#left-bottom-nav #iso",
-      {
-        backgrounfColor: "#fff",
-        color: "transparent",
+        duration: 1.5,
         ease: "Power1.easeInOut",
       },
       "hello"
@@ -232,6 +229,35 @@ function timeLineOne() {
       "hello2"
     )
     .to(
+      "#left-bottom-nav h5, #icon",
+      {
+        color: "#fff",
+        duration: 1.5,
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#left-bottom-nav #iso",
+      {
+        backgroundColor: "#fff",
+        color: "transparent",
+        duration: 1.5,
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
+      "#left-bottom-nav #iso h4",
+      {
+        // backgroundColor: "#fff",
+        color: "#000",
+        duration: 1.5,
+        ease: "Power1.easeInOut",
+      },
+      "hello"
+    )
+    .to(
       "#slider-div",
       {
         bottom: "150%",
@@ -257,11 +283,104 @@ function timeLineTwo() {
     },
   });
 
-  tl.to(".circle-1", {
-    top: "50%",
-    duration: 1,
-    ease: "Power1",
-  });
+  tl.to(
+    "#nav-bar #brand-name",
+    {
+      color: "#000",
+      ease: "Power.easeInOut",
+    },
+    "hi"
+  )
+    .to(
+      "#colors #color-6",
+      {
+        backgroundColor: "rgb(0, 0, 0)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#colors #color-5",
+      {
+        backgroundColor: "rgba(38, 38, 38, 0.89)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#colors #color-4",
+      {
+        backgroundColor: "rgba(75, 75, 75, 0.874)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#colors #color-3",
+      {
+        backgroundColor: "rgba(113, 113, 113, 0.901)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#colors #color-2",
+      {
+        backgroundColor: "rgba(150, 150, 150, 0.901)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#colors #color-1",
+      {
+        backgroundColor: "rgba(188, 188, 188, 0.786)",
+        ease: "Power.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#text h4",
+      {
+        color: "#000",
+        duration: 1,
+        ease: "Power1.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#left-bottom-nav h5, #icon",
+      {
+        color: "#000",
+        duration: 1,
+        ease: "Power1.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#left-bottom-nav #iso",
+      {
+        backgroundColor: "#000000cd",
+        duration: 1,
+        ease: "Power1.easeInOut",
+      },
+      "hi"
+    )
+    .to(
+      "#left-bottom-nav #iso h4",
+      {
+        color: "#fff",
+        duration: 1,
+        ease: "Power1.easeInOut",
+      },
+      "hi"
+    );
+
+  // .to(".circle-1", {
+  //   top: "50%",
+  //   duration: 1,
+  //   ease: "Power1",
+  // });
 }
 
-// timeLineTwo();
+timeLineTwo();
